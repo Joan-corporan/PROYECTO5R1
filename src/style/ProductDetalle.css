@@ -59,14 +59,21 @@
     .divWidth{
         width:55% ;
     }
+    .PaddingDescripcion{
+        padding: 0 1rem !important;
+    }
 }
 @media (max-width:770px) {
     .divWidth{
         width:65% ;
     }
+    .PaddingDescripcion{
+        padding: 0 1rem !important;
+    }
 }
 @media (max-width:550px) {
     .divWidth{
         width:85% ;
+        
     }
 }
