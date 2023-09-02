@@ -11,6 +11,7 @@ export const PerfilPage = () => {
                 const {data}= await axios.get(`http://localhost:8080/perfil/${id}`)
                 setPerfil(data)
                 console.log(perfil)
+                console.log(perfil)
             } catch (error) {
                 console.log(error)
                 
