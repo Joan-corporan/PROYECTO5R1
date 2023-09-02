@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import {  useParams } from "react-router-dom";
-import "../style/productDetalle.css";
+import "../style/ProductDetalle.css";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
 
@@ -22,7 +22,8 @@ export const ProductId = () => {
       } catch (error) {
         console.log(error);
       }
-    };
+    }; 
+    
     fetchUrl();
   }, []);
   const agregarCarrito = (productD) => {
@@ -30,6 +31,7 @@ export const ProductId = () => {
   };
 
   return (
+    
     <>
       <div className="ContendorCarrusel">
         <div>
