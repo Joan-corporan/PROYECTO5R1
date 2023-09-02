@@ -23,6 +23,31 @@
     text-align: center;
 
 }
+.ContenedorimgCarrito p{
+    font-size: 22px;
+    font-weight: 600;
+}
+.texalP{
+    font-size: 22px;
+    font-weight: 600;
+}
+.btnPagar{
+    padding: 8px 0;
+    width: 20%;
+    margin: 5px 0;
+    background-color:#EE5953;
+   /*  padding: 5px 16px; */
+    border-style: none;
+    border-radius: 12px;
+    /* border-color: #f28e3d4c; */
+    transition: 300ms;
+    font-weight: 700;
+    color: white;
+}
+.btnPagar:hover{
+    background-color:#ee5853b6;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.415);
+}
 .texalP{
     display: flex;
     flex-direction: column;
@@ -99,6 +124,9 @@
     }
     .dcCrow div{
         width: 100%;
+    }
+    .btnPagar{
+        width: 35%;
     }
     
 }

@@ -29,7 +29,7 @@ export const MainRouter = () => {
         <Route path="quienes" element={<QuienesSP />} />
         <Route path="success-purchase" element={<SuccessP />} />
         <Route path="detalle/:id" element={<ProductId />} />
-        <Route path="perfil/:id" element={<PerfilPage />} />
+        <Route path="perfil" element={<PerfilPage />} />
       </Routes>
     </div>
   );

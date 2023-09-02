@@ -47,7 +47,7 @@ export const ProductoCarrito = ({ producto, setCarritoDecompra }) => {
         <div className="ContenedorimgCarrito">
           <h2>{producto.nombre}</h2>
           <div >
-            <img src={producto.imagenes.pricipal} alt="" />
+            <img src={producto.imagenes.pricipal} alt={producto.nombre} />
           </div>
           <p>Precio: {producto.precio}</p>
           <p>Cantidad: {contador}</p>

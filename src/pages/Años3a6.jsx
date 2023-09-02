@@ -15,7 +15,7 @@ export const Años3a6 = () => {
           "http://localhost:8080/products/filter/3-6"
         );
         setDataProduct(data);
-        console.log(dataProduct);
+        
       } catch (error) {
         console.log(error);
       }

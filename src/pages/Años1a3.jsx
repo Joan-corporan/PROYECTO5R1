@@ -15,7 +15,7 @@ export const Años1a3 = () => {
           "http://localhost:8080/products/filter/1-3"
         );
         setDataPro(data);
-        console.log(dataPro);
+       
       } catch (error) {
         console.log(error);
       }

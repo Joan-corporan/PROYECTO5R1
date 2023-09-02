@@ -1,2 +1,0 @@
-desc:
-practico material didáctico para aprende las tablas de multiplicar del 1 al 10. son 100 cubos de madera con las multiplicaciones básicas con su resultado por el reverso.

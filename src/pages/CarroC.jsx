@@ -8,7 +8,7 @@ import { CarroContext } from "../context/Carrito/carroContext";
 
 export const CarroC = () => {
   const [carrito, dispatch]=useContext(CarroContext)
-  console.log(carrito)
+  
   const paymentUrl = 'http://localhost:8080/payment/create-payment'
 
   const comprar =async()=>{
@@ -44,7 +44,7 @@ export const CarroC = () => {
   return (
     <>
       <div className="vhCC">
-        <h1>Carro de compras</h1>
+        
         <hr />
         <div className="dcdcC">
           <div className="dcCrW">
@@ -63,7 +63,7 @@ export const CarroC = () => {
             <h4>Total Carrito: {precioTota}</h4>
 
             <div>
-              <button  onClick={comprar}>Pagar</button>
+              <button className="btnPagar"  onClick={comprar}>Pagar</button>
             </div>
           </div>
         </div>

@@ -18,7 +18,7 @@ export const ProductId = () => {
           `http://localhost:8080/products/items/${id}`
         );
         setProductD(data.detail);
-        console.log(productD);
+      
       } catch (error) {
         console.log(error);
       }

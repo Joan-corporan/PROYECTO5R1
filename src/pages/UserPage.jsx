@@ -26,13 +26,13 @@ export const UserPage = () => {
       ...formuser,
       [e.target.name]: e.target.value
     })
-    console.log(formuser)
+    
 
   }
 
   const handlesubmit  = async(e)=>{
     e.preventDefault()
-    console.log(formuser)
+    
     try {
       const {data}= await axios.post('http://localhost:8080/users',formuser,{
         headers:{
@@ -45,19 +45,7 @@ export const UserPage = () => {
         type:types.setUserState,
         payload: tokenDecodificado
       })
-     /*  window.alert('Usuario Creado') */
-     /* if(formuser.username===""||formuser.lastname===""||formuser.formuser.email===""||formuser.password===""){
-      toast("Campos Obligatorios",{
-        type: "warning",
-        autoClose: 3000
-       })
-     }else{
-
-       toast("Usuario Creado",{
-        type: "success",
-        autoClose: 3000
-       })
-     } */
+   
       setformUser(inicialValue)
       
     } catch (error) {
@@ -93,7 +81,7 @@ export const UserPage = () => {
     })
     localStorage.setItem("userProfile",JSON.stringify(data.token))
       
-    console.log(data)
+    
     const tokenDecodificadoL = jwt(data.token)
     dispatch({
       type: types.setUserState,
@@ -112,7 +100,7 @@ export const UserPage = () => {
       type: types.setUserState,
       payload: error
     })
-    toast("Algo salio mal",{
+    toast("Contraseña Incorrecta",{
       type: "error",
       autoClose: 3000
     })
@@ -127,8 +115,8 @@ export const UserPage = () => {
           <div className='mar'>
             <span className='span'>Ingresar</span>
             <form onSubmit={handelSubmitL}  className='marg'>
-            <input onChange={handleChangeL} type="email" placeholder='Correo Electrónico'name="email" id="email" value={login.email} />
-            <input onChange={handleChangeL} type="password" placeholder='Contraseña' name="password" id="password" value={login.password} />
+            <input required onChange={handleChangeL} type="email" placeholder='Correo Electrónico'name="email" id="email" value={login.email} />
+            <input required onChange={handleChangeL} type="password" placeholder='Contraseña' name="password" id="password" value={login.password} />
             <button type='submit'>Ingresar</button>
             </form>
           </div>
@@ -140,18 +128,17 @@ export const UserPage = () => {
 
 
 
-          {/* 
-          <span className=''></span> */}
+         
           <div className=' login-separator'>
             <span className='spn'>¿Aún no tienes una cuenta?</span>
             <span className='span'>Regístrate</span>
 
             <form onSubmit={handlesubmit} className='marg' >
-            <input onChange={handleChange} type="email" placeholder='Correo Electrónico'name="email" id="email" />
-            <input onChange={handleChange} type="password" placeholder='Contraseña' name="password" id="password" />
+            <input required onChange={handleChange} type="email" placeholder='Correo Electrónico'name="email" id="email" />
+            <input required onChange={handleChange} type="password" placeholder='Contraseña' name="password" id="password" />
             <div className='div2cd'>
-            <input onChange={handleChange} type="text" placeholder='Nombre' name="username" id="username" />
-            <input onChange={handleChange} type="text" placeholder='Apellidos' name="lastname" id="lastname" />
+            <input required onChange={handleChange} type="text" placeholder='Nombre' name="username" id="username" />
+            <input required onChange={handleChange} type="text" placeholder='Apellidos' name="lastname" id="lastname" />
             </div>
             <button type='submit'>Crear cuenta</button>
             </form>

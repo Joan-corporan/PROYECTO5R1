@@ -71,6 +71,15 @@ header{
     justify-content: space-around !important;
     align-items: center !important;
 }
+.contenedorDisplayC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.nombreUser{
+    text-decoration: none;
+    color: black;
+}
 
 svg{
     padding: 15px;

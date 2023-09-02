@@ -18,7 +18,7 @@ export const Años01 = () => {
           "http://localhost:8080/products/filter/0-1"
         );
         setDatapro(data);
-        console.log(datapro);
+        
       } catch (error) {
         console.log(error);
       }
@@ -28,7 +28,7 @@ export const Años01 = () => {
   const agregarCarrito = (elemeto) => {
     dispatch({ type: carroTypes.setCarroState, payload: elemeto });
   };
-  console.log("esto es datapro", datapro);
+  
 
   return (
     <>

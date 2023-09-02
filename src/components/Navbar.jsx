@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../style/NavStyle.css";
-import { Link, NavLink, Navigate, useNavigate } from "react-router-dom";
+import { Link, NavLink,  useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../context/user/UserContext";
 import { types } from "../context/user/userReducer";
@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [, dispatch] = useContext(UserContext);
   const navigate = useNavigate();
   const handleLogout = () => {
-    console.log("Cerrarando sesion");
+    
 
     dispatch({ type: types.setLogout });
     navigate("/");
@@ -50,7 +50,9 @@ export const Navbar = () => {
           </div>
           <div className="CnMm2">
             
-            
+            <div>
+              
+            </div>
             <div className="dropdown ">
               <button
                 className="btn padding  dropdown-toggle"
@@ -70,23 +72,25 @@ export const Navbar = () => {
               </button>
               <ul className="dropdown-menu">
                 <li>
-                   <Link className="dropdown-item" href="#">
-                    Perfil
+                   <Link className="dropdown-item" to="perfil">
+                   {user ? "Perfil" :<></> }
                   </Link>
                 </li>
                 <li>
                 <NavLink className="dropdown-item " to="user">
-                    Inicial Sesion
+                {user ? "" : "Iniciar Sesión"}
                   </NavLink>
                 </li>
                 <li>
-                 <Link className="dropdown-item" onClick={handleLogout}>Cerrar Sesión</Link>
+                 <Link className="dropdown-item" to={"/"} onClick={handleLogout}>{user ?  "Cerrar Sesión" : ""}</Link>
                 </li>
               </ul>
             </div>
             
-             
-              {user ? user.user.username : null}
+            <Link className="nombreUser" to="perfil">
+
+              {user ? user.user.username :<></> }
+            </Link>
             
             <NavLink className="nsvgbg" to="carroc">
               <svg

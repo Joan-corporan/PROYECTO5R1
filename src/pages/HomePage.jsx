@@ -14,7 +14,7 @@ export const HomePage = () => {
       try {
         const { data } = await axios.get("http://localhost:8080/products");
         setDatapro(data);
-        console.log(datapro);
+        
       } catch (error) {
         console.log(error);
       }
@@ -47,14 +47,14 @@ export const HomePage = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="/public/imgJB/jbpr5.png"
+              src="https://dojiw2m9tvv09.cloudfront.net/17766/4/bannerescritorio9149.png?398&time=1693641852"
               className="d-block w-100"
               alt="anuncio delivery"
             />
           </div>
           <div className="carousel-item">
             <img
-              src="/public/imgJB/jbpr52.png"
+              src="https://dojiw2m9tvv09.cloudfront.net/17766/4/bannerescritorio9149.png?398&time=1693641852"
               className="d-block w-100"
               alt="Nueva Coleccion Bebé"
             />
