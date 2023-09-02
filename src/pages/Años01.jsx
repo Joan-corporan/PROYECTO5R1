@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import "../style/Pag.años0A1.css";
+
 import { DeliveryC } from "../components/DeliveryC";
 import "../style/AñosP0a1.css";
 import axios from "axios";
@@ -18,7 +18,6 @@ export const Años01 = () => {
           "http://localhost:8080/products/filter/0-1"
         );
         setDatapro(data);
-        
       } catch (error) {
         console.log(error);
       }
@@ -28,7 +27,6 @@ export const Años01 = () => {
   const agregarCarrito = (elemeto) => {
     dispatch({ type: carroTypes.setCarroState, payload: elemeto });
   };
-  
 
   return (
     <>
