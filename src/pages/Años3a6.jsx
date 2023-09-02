@@ -34,7 +34,7 @@ export const Años3a6 = () => {
             <li className="divCproduc">
               <div className="divCproducimg">
                 <Link to={`/detalle/${elemeto._id}`}>
-                  <img src={elemeto.imagenes.pricipal} />
+                  <img src={elemeto.imagenes.pricipal} alt="Imagenes de los produtos"/>
                 </Link>
               </div>
               <p className="nombreProduct">{elemeto.nombre}</p>

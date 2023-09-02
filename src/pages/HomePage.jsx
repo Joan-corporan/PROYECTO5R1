@@ -94,7 +94,7 @@ export const HomePage = () => {
               <li className="divCproduc">
                 <div className="divCproducimg">
                   <Link to={`/detalle/${elemeto._id}`}>
-                    <img src={elemeto.imagenes.pricipal} />
+                    <img src={elemeto.imagenes.pricipal} alt="Imagen productos"/>
                   </Link>
                 </div>
                 <p className="nombreProduct">{elemeto.nombre}</p>

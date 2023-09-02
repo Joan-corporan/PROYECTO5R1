@@ -71,28 +71,28 @@ export const ProductId = () => {
               <img
                 src={productD?.imagenes.pricipal}
                 className="d-block w-100"
-                alt={productD?.nombre}
+                alt={"imagenes del producto"}
               />
             </div>
             <div className="carousel-item">
               <img
                 src={productD?.imagenes.secundarias[0]}
                 className="d-block w-100"
-                alt={productD?.nombre}
+                alt={"imagenes del producto"}
               />
             </div>
             <div className="carousel-item">
               <img
                 src={productD?.imagenes.secundarias[1]}
                 className="d-block w-100"
-                alt={productD?.nombre}
+                alt={"imagenes del producto"}
               />
             </div>
             <div className="carousel-item">
               <img
                 src={productD?.imagenes.secundarias[2]}
                 className="d-block w-100"
-                alt={productD?.nombre}
+                alt={"imagenes del producto"}
               />
             </div>
           </div>
