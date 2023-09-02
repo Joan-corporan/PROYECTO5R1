@@ -45,7 +45,7 @@ export const Navbar = () => {
 
           <div>
             <NavLink className="nAvCL" to="/">
-              <img src="/public/imgL/logo.png" alt="logo" />
+              <img src="https://res.cloudinary.com/dfxpgwzls/image/upload/v1693644497/Copia_de_logo_hgybxi.png" alt="Logo" />
             </NavLink>
           </div>
           <div className="CnMm2">
