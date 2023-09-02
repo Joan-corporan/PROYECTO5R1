@@ -46,7 +46,7 @@ export const UserPage = () => {
         payload: tokenDecodificado
       })
      /*  window.alert('Usuario Creado') */
-     if(formuser.username===""||formuser.lastname===""||formuser.formuser.email===""||formuser.password===""){
+     /* if(formuser.username===""||formuser.lastname===""||formuser.formuser.email===""||formuser.password===""){
       toast("Campos Obligatorios",{
         type: "warning",
         autoClose: 3000
@@ -57,7 +57,7 @@ export const UserPage = () => {
         type: "success",
         autoClose: 3000
        })
-     }
+     } */
       setformUser(inicialValue)
       
     } catch (error) {
