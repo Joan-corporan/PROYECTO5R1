@@ -1,0 +1,272 @@
+[
+    
+    {
+        
+        "nombre":"Autos de tela",
+        "precio":5000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Busxilófono",
+        "precio":8000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+     {
+        "nombre":"Cubos de Goma",
+        "precio":10000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Guarda Dientes",
+        "precio":7000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Manzana Didacta",
+        "precio":7000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Martillo con Pelotas",
+        "precio":17000,
+        "cantidad":100,
+        "edad":[0,1],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+
+
+    {
+        "nombre":"Arbol Didactico",
+        "precio":16000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Encaje Lógica",
+        "precio":220000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Juego de Pesca con Pinzas",
+        "precio":12000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Set Musical",
+        "precio":250000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Titeres de Dedos",
+        "precio":8000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Torre de Encajes",
+        "precio":6000,
+        "cantidad":100,
+        "edad":[1,3],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+
+
+    {
+        "nombre":"Carro de Supermecado",
+        "precio":450000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Cocina de Madera",
+        "precio":55000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Juego de Expresion",
+        "precio":5000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Piano de Cola Infantil",
+        "precio":90000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Pizarra Artil",
+        "precio":30000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+    {
+        "nombre":"Vestidos Magneticos",
+        "precio":8000,
+        "cantidad":100,
+        "edad":[3,6],
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },
+
+
+
+    {
+        "nombre":"Ajedrez Magnetico",
+        "precio":8000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },   {
+        "nombre":"Dinosaurio",
+        "precio":16000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },   {
+        "nombre":"Pelota Laberinto",
+        "precio":16000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },   {
+        "nombre":"Sistema Solar",
+        "precio":250000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },   {
+        "nombre":"Tabla de Multiplicar",
+        "precio":14000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    },   
+    {
+        "nombre":"Taca taca",
+        "precio":110000,
+        "cantidad":100,
+        "edad":6,
+        "imagenes":{
+            "pricipal":"urlimagen",
+            "secundarias":[]
+        },
+        "sku":837445324
+    }
+
+]

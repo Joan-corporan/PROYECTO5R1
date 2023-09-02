@@ -1,0 +1,110 @@
+
+.dUserC{
+   /*  height: 65vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'Open Sans';
+    margin-bottom: 25px;
+}
+.dUserC div{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 50%;
+    font-family: 'Open Sans';
+}
+.dUserC .mar{
+
+    margin-top: 27px;
+}
+.dUserC .marg{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dUserC div .span{
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+}
+.dUserC div input{
+    padding: 8px 16px;
+    width: 80%;
+    margin: 10px 0;
+    height: 36px;
+    border: 2px #f28e3dbc solid;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 150ms;
+}
+.dUserC div input:hover{
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.304);
+
+}
+.dUserC div .div2cd{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans';
+}
+.dUserC div .div2cd input{
+    margin: 5px 5px;
+    width: 50%;
+    font-family: 'Open Sans';
+}
+.login-separator{
+    border-left: 1.5px solid rgba(0, 0, 0, 0.415);
+}
+.dUserC button{
+    margin-top: 16px;
+    color: white;
+    padding: 6px 22px;
+    border-style: solid;
+    border-color: #EE5953 ;
+    background-color: #EE5953;
+    border-radius: 13px;
+    transition: 200ms;
+    font-family: 'Open Sans';
+}
+.dUserC button:hover{
+    background-color: #8d1e1a;
+    border-color: #8d1e1a ;
+}
+.spDi{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.spn{
+    font-size: 18px;
+}
+
+@media (max-width:770px) {
+    .dUserC {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .dUserC div{
+        width: 100%;
+    }
+    .login-separator{
+        border-left: 1.5px solid rgba(255, 255, 255, 0.415);
+        border-top: 1.5px solid rgba(0, 0, 0, 0.415);
+        
+    }
+    .dUserC div input{
+        width: 100%;
+    }
+
+    
+}

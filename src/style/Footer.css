@@ -1,0 +1,108 @@
+
+  .fCs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+
+  }
+  .fbgC{
+   padding-bottom: 30px;
+   background-color: #f28e3db6;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .fbgC .fbgCC{
+    width: 100%;
+    padding-top: 10px;
+    /* border-style: solid; */
+    border-top: 3px #ee58535f solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .fbgC2{
+    /* background: #f3791593 */
+    width: 100%;
+
+  }
+  .fcdR{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .fcdR .dfr{
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #EE5953;
+    transition: 200ms;
+    font-weight: 700 ;
+    font-family: monospace;
+  }
+  .fcdR .dfr:hover{
+    color: white ;
+  }
+  .fbgCC div{
+    margin: 20px 0;
+    width: 33.3%;
+  }
+ /*  .fbgCC div ul{
+    padding: 20px 0;
+  } */
+  .divFooterContac{
+    text-align: center;
+  }
+  .fbgCC div h2{
+    margin-bottom: 10px;
+    text-align: center;
+    color: white ;/* #ee585398 */
+  }
+  .fbgCC div li{
+    list-style: none;
+  }
+  .fbgCC div li p{
+    
+    font-weight: 600;
+    color:white ;/* #E7AF64 */
+    font-size: 1.1rem;
+  }
+  .nsvgbgF svg{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(287deg) brightness(105%) contrast(101%);
+  }
+  .nsvgbgF svg:hover{
+    filter: invert(57%) sepia(18%) saturate(6882%) hue-rotate(325deg) brightness(94%) contrast(110%);
+  }
+  @media  (max-width:770px) {
+    .fbgC .fbgCC {
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+    }
+    .fbgC .fbgCC div{
+      width: 100%;
+      text-align: center;
+    }
+    
+  }
+  @media (max-width:500px) {
+    .fcdR {
+      width: 100%;
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
