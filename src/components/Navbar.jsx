@@ -82,12 +82,12 @@ export const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                 <Link className="dropdown-item" to={"/"} onClick={handleLogout}>{user ?  "Cerrar Sesión" : ""}</Link>
+                </li>
+                <li>
                 <NavLink className="dropdown-item " to="user">
                 {user ? "" : "Regístrate"}
                   </NavLink>
-                </li>
-                <li>
-                 <Link className="dropdown-item" to={"/"} onClick={handleLogout}>{user ?  "Cerrar Sesión" : ""}</Link>
                 </li>
               </ul>
             </div>
