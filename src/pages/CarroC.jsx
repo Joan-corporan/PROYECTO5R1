@@ -9,7 +9,7 @@ import { CarroContext } from "../context/Carrito/carroContext";
 export const CarroC = () => {
   const [carrito, dispatch] = useContext(CarroContext);
 
-  const paymentUrl = "http://localhost:8080/payment/create-payment";
+  const paymentUrl = "https://ecommercebackend-egbf.onrender.com/payment/create-payment";
 
   const comprar = async () => {
     const items = carritoDeCompra;

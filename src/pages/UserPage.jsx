@@ -34,7 +34,7 @@ export const UserPage = () => {
     e.preventDefault()
     
     try {
-      const {data}= await axios.post('http://localhost:8080/users',formuser,{
+      const {data}= await axios.post('https://ecommercebackend-egbf.onrender.com/users',formuser,{
         headers:{
           "Content-Type": "application/json"
         }
@@ -74,7 +74,7 @@ export const UserPage = () => {
   const handelSubmitL = async(e)=>{
     e.preventDefault()
   try {
-    const {data}= await axios.post("http://localhost:8080/users/login",login,{
+    const {data}= await axios.post("https://ecommercebackend-egbf.onrender.com/users/login",login,{
       headers:{
         "Content-Type":"application/json"
       }

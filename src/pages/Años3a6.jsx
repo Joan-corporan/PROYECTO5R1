@@ -12,7 +12,7 @@ export const Años3a6 = () => {
     const fetchDataUrl = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8080/products/filter/3-6"
+          "https://ecommercebackend-egbf.onrender.com/products/filter/3-6"
         );
         setDataProduct(data);
         
