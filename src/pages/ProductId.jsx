@@ -15,7 +15,7 @@ export const ProductId = () => {
     const fetchUrl = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:8080/products/items/${id}`
+          `https://ecommercebackend-egbf.onrender.com/products/items/${id}`
         );
         setProductD(data.detail);
       
