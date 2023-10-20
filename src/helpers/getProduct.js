@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const productoData = "http://localhost:8080/products";
+const productoData = "https://ecommercebackend-egbf.onrender.com/products";
 export const getProducts = async () => {
   const { data } = await axios.get(productoData);
   
