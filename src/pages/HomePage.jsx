@@ -12,7 +12,7 @@ export const HomePage = () => {
   useEffect(() => {
     const fetchdata = async () => {
       try {
-        const { data } = await axios.get("http://localhost:8080/products");
+        const { data } = await axios.get("https://ecommercebackend-egbf.onrender.com/products");
         setDatapro(data);
         
       } catch (error) {
