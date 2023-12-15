@@ -6,10 +6,12 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
+import { Loading } from "../components/Loading";
 
 export const Años01 = () => {
   const [carrito, dispatch] = useContext(CarroContext);
   const [datapro, setDatapro] = useState(null);
+  const [carga,setCarga]=useState(true)
 
   useEffect(() => {
     const fetchdata = async () => {
@@ -18,6 +20,7 @@ export const Años01 = () => {
           "https://ecommercebackend-egbf.onrender.com/products/filter/0-1"
         );
         setDatapro(data);
+        setCarga(false)
       } catch (error) {
         console.log(error);
       }
@@ -30,6 +33,7 @@ export const Años01 = () => {
 
   return (
     <>
+    {carga ? <Loading/> :
       <ul className="rowProduct">
         {datapro?.detail.map((elemeto) => (
           <article className="listD" key={elemeto._id}>
@@ -51,7 +55,7 @@ export const Años01 = () => {
             </li>
           </article>
         ))}
-      </ul>
+      </ul>}
 
       <DeliveryC />
     </>

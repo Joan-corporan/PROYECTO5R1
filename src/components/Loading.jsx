@@ -1,21 +1,18 @@
-
-import { ring } from 'ldrs'
+import { ring } from "ldrs";
+import '../style/Loading.css'
 
 export const Loading = () => {
-    
-    ring.register()
+  ring.register();
   return (
-    <>
-
-
-
-<l-ring
-  size="50"
-  stroke="5"
-  bg-opacity="0"
-  speed="2" 
-  color="black" 
-></l-ring>
-    </>
-  )
-}
+    // Centrar
+    <div className="Cargando">
+      <l-ring
+        size="70"
+        stroke="5"
+        bg-opacity="0"
+        speed="2"
+        color="#EE5953"
+      ></l-ring>
+    </div>
+  );
+};
