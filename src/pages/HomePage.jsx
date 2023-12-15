@@ -4,16 +4,19 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
+import { Loading } from "../components/Loading";
 
 export const HomePage = () => {
   const [datapro, setDatapro] = useState(null);
   const [carrito, dispatch] = useContext(CarroContext);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchdata = async () => {
       try {
         const { data } = await axios.get("https://ecommercebackend-egbf.onrender.com/products");
         setDatapro(data);
+        setLoading(false)
         
       } catch (error) {
         console.log(error);
@@ -88,6 +91,7 @@ export const HomePage = () => {
 
       <div className="dvproD">
         <h2>Para Todas las Edades </h2>
+        {loading ? <Loading/> : 
         <ul className="rowProduct">
           {datapro?.detail.map((elemeto) => (
             <article className="listD" key={elemeto._id}>
@@ -109,7 +113,7 @@ export const HomePage = () => {
               </li>
             </article>
           ))}
-        </ul>
+        </ul>}
       </div>
 
       <div className="Dartic">
