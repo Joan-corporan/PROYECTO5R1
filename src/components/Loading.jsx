@@ -7,12 +7,12 @@ export const Loading = () => {
     // Centrar
     <div className="Cargando">
       <l-ring
-        size="80"
-        stroke="5"
+        size="100"
+        stroke="10"
         bg-opacity="0"
-        speed="2"
-        /* color="#EE5953" */
-        color="black"
+        speed="1.8"
+        color="#EE5953"
+        
       ></l-ring>
     </div>
   );
