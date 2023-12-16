@@ -4,7 +4,8 @@ import { Loading } from '../components/Loading'
 export const QuienesSP = () => {
   return (
     <div style={{
-      width:'50vh'
+      width:'100%',
+      height:'50vh'
     }}>
       <Loading/>
     </div>
