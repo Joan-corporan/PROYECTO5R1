@@ -33,7 +33,7 @@ export const Años01 = () => {
 
   return (
     <>
-   
+    {carga ? <Loading/> :
       <ul className="rowProduct">
         {datapro?.detail.map((elemeto) => (
           <article className="listD" key={elemeto._id}>
@@ -55,7 +55,7 @@ export const Años01 = () => {
             </li>
           </article>
         ))}
-      </ul>
+      </ul>}
 
       <DeliveryC />
     </>
