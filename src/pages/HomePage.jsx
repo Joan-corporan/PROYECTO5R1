@@ -89,9 +89,9 @@ export const HomePage = () => {
         </button>
       </div>
 
+        {loading ? <Loading/> : 
       <div className="dvproD">
         <h2>Para Todas las Edades </h2>
-        {loading ? <Loading/> : 
         <ul className="rowProduct">
           {datapro?.detail.map((elemeto) => (
             <article className="listD" key={elemeto._id}>
@@ -113,8 +113,8 @@ export const HomePage = () => {
               </li>
             </article>
           ))}
-        </ul>}
-      </div>
+        </ul>
+      </div>}
 
       <div className="Dartic">
         <div className="artic1">
