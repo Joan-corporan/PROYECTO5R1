@@ -102,7 +102,7 @@
 }
 .btnAgregar{
     margin: 5px 0;
-    background-color: #f28e3d4c;
+    background-color: #f28e3dbb;
     padding: 5px 16px;
     border-style: none;
     border-radius: 12px;
@@ -112,7 +112,7 @@
     color: white;
 }
 .btnAgregar:hover{
-    background-color: #f28e3dbb;
+    background-color: #EE5953;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.415);
 
 }

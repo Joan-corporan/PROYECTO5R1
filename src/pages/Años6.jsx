@@ -30,7 +30,7 @@ export const Años6 = () => {
   };
   return (
     <>
-      <h1>mas 6 años</h1>
+      <h1>Más 6 años</h1>
       {carga ? <Loading/> :
       <ul className="rowProduct">
         {DataProd?.detail.map((elemeto) => (

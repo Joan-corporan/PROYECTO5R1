@@ -73,7 +73,7 @@ export const Navbar = () => {
               <ul className="dropdown-menu">
                 <li>
                    <Link className="dropdown-item" to="perfil">
-                   {user ? "Perfil" :<></> }
+                   {user ? "Perfil" : null }
                   </Link>
                 </li>
                 <li>
@@ -82,7 +82,7 @@ export const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
-                 <Link className="dropdown-item" to={"/"} onClick={handleLogout}>{user ?  "Cerrar Sesión" : ""}</Link>
+                 <Link className="dropdown-item" to={"/"} onClick={handleLogout}>{user ?  "Cerrar Sesión" : null}</Link>
                 </li>
                 <li>
                 <NavLink className="dropdown-item " to="user">
