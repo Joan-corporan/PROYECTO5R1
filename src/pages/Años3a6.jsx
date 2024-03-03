@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
 import { Loading } from "../components/Loading";
+import { CardsProduc } from "../components/CardsProduc";
 
 export const Años3a6 = () => {
   const [carrito, dispatch] = useContext(CarroContext);

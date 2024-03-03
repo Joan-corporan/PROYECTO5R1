@@ -36,10 +36,8 @@
     width: 20%;
     margin: 5px 0;
     background-color:#EE5953;
-   /*  padding: 5px 16px; */
     border-style: none;
     border-radius: 12px;
-    /* border-color: #f28e3d4c; */
     transition: 300ms;
     font-weight: 700;
     color: white;
@@ -96,10 +94,7 @@
 
 @media (max-width:990px) {
     .dcdcC{
-       /*  display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; */
+      
         padding: 22px 16px;
         width: 100%;
         background-color:#f9cc5046;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "../style/HomeP.css"
 
 export const CardsProduc = ({DataProd, agregarCarrito}) => {
   return (

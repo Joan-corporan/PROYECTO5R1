@@ -4,6 +4,7 @@ import axios from "axios";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
 import { Loading } from "../components/Loading";
+import { CardsProduc } from "../components/CardsProduc";
 
 export const Años1a3 = () => {
   const [carrito, dispatch] = useContext(CarroContext);
