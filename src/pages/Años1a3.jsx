@@ -1,14 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import { DeliveryC } from "../components/DeliveryC";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import { CarroContext } from "../context/Carrito/carroContext";
 import { carroTypes } from "../context/Carrito/carroReducer";
 import { Loading } from "../components/Loading";
 
 export const Años1a3 = () => {
   const [carrito, dispatch] = useContext(CarroContext);
-  const [dataPro, setDataPro] = useState(null);
+  const [DataProd, setDataPro] = useState(null);
   const [cargando, setCargando]=useState(true)
   useEffect(() => {
     const fetchDataUrl = async () => {
@@ -17,10 +16,13 @@ export const Años1a3 = () => {
           "https://ecommercebackend-egbf.onrender.com/products/filter/1-3"
         );
         setDataPro(data);
-        setCargando(false)
        
       } catch (error) {
         console.log(error);
+      }
+      finally{
+        setCargando(false)
+
       }
     };
     fetchDataUrl();
@@ -31,28 +33,8 @@ export const Años1a3 = () => {
   return (
     <>
       <h1>1 a 3 años</h1>
-      {cargando ? <Loading/> : <ul className="rowProduct">
-        {dataPro?.detail.map((elemeto) => (
-          <article className="listD" key={elemeto._id}>
-            <li className="divCproduc">
-              <div className="divCproducimg">
-                <Link to={`/detalle/${elemeto._id}`}>
-                  <img src={elemeto.imagenes.pricipal} alt="Imagenes de productos" /> 
-                </Link>
-              </div>
-              <p className="nombreProduct">{elemeto.nombre}</p>
-              <p> ${elemeto.precio} </p>
-
-              <button
-                className="btnAgregar"
-                onClick={() => agregarCarrito(elemeto)}
-              >
-                Agregar al Carrito
-              </button>
-            </li>
-          </article>
-        ))}
-      </ul>}
+      {cargando ? <Loading/> :<CardsProduc agregarCarrito={agregarCarrito}  DataProd={DataProd}/>
+      }
       <DeliveryC />
     </>
   );

@@ -96,6 +96,7 @@
     width: 100%;
     transition: 200ms;
     object-fit: cover;
+    transition: 500ms;
 }
 .divCproducimg img:hover{
     scale: 1.2;
