@@ -13,7 +13,9 @@ export const Loading = () => {
         speed="1.8"
         color="#EE5953"
         
-      ></l-ring>
+      >
+      </l-ring>
+       <strong className="waitText">Espere por favor...</strong> 
     </div>
   );
 };
