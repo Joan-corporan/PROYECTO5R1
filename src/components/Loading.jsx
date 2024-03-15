@@ -15,7 +15,9 @@ export const Loading = () => {
         
       >
       </l-ring>
-       <strong className="waitText">Espere por favor...</strong> 
+       <strong style={{
+        fontSize: "1.5em"
+       }} className="waitText">Cargando Productos...</strong> 
     </div>
   );
 };

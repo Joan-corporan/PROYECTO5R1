@@ -1,7 +1,9 @@
 import { useState } from "react";
 
-export const ProductoCarrito = ({ producto, setCarritoDecompra }) => {
+export const ProductoCarrito = ({ producto, setCarritoDecompra, setPrecioTotal  }) => {
   const [contador, setContador] = useState(producto.quantity);
+  const [isActive, setIsActive]=useState("")
+
 
   const aumentar = () => {
     if(contador>=1){
@@ -41,8 +43,32 @@ export const ProductoCarrito = ({ producto, setCarritoDecompra }) => {
     setContador(contador - 1);
   };
   }
+  const eliminarProducto=()=>{
+    setIsActive("productoEliminado")
+    let priceT = producto.precio * contador;
+    let productoPrecioXCantidad =  producto.precio * producto.quantity;
+   
+    if(isActive="productoEliminado"){
+      setCarritoDecompra((productos) => {
+        const productoarray = productos.map((product) => {
+          if (producto._id === product._id) {
+            
+              
+               setPrecioTotal(priceT-productoPrecioXCantidad);
+           
+          } else {
+            return product;
+          }
+        });
+        return productoarray;
+      });
+      setContador(0);
+    };
+  
+  }
+  
   return (
-    <div>
+    <div className={isActive}>
       <li className="dcCrow" key={producto._id}>
         <div className="ContenedorimgCarrito">
           <h2>{producto.nombre}</h2>
@@ -66,7 +92,10 @@ export const ProductoCarrito = ({ producto, setCarritoDecompra }) => {
             <button className="btnccd" onClick={aumentar}>
               +
             </button>
+            
           </div>
+        <button className="btnAgregar" onClick={eliminarProducto}>Eliminar Producto</button>
+
         </div>
       </li>
     </div>
